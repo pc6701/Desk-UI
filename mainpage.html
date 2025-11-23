@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desk UI</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=lDxPxP30VJWI&format=png&color=000000">
+
+  <!-- Bootstrap & Icons -->
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="position-absolute top-0 w-100 start-0 object-fit-cover">
+
+<!-- FULLSCREEN BACKGROUND CAROUSEL -->
+<div id="desktopCarousel" class="carousel slide carousel-fade position-fixed top-0 start-0 w-100 vh-100" 
+     style="z-index: -1;" data-bs-ride="carousel">
+  <div class="carousel-inner h-100">
+    <div class="carousel-item active h-100">
+      <img src="Images/i3.jpeg" class="d-block w-100 h-100 object-fit-cover">
+    </div>
+    <div class="carousel-item h-100">
+      <img src="Images/i2.jpg" class="d-block w-100 h-100 object-fit-cover">
+    </div>
+    <div class="carousel-item h-100">
+      <img src="Images/i9.jpg" class="d-block w-100 h-100 object-fit-cover">
+    </div>
+    <div class="carousel-item h-100">
+      <img src="Images/i4.jpg" class="d-block w-100 h-100 object-fit-cover">
+    </div>
+    <div class="carousel-item h-100">
+      <img src="Images/i5.jpeg" class="d-block w-100 h-100 object-fit-cover">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
+  </button>
+</div>
+<!-- END OF CAROUSEL -->
+
+<div class="container-fluid">
+  <!-- Desktop Icons -->
+  <div class="container-fluid py-3" style="height: 100vh; overflow-y: auto;">
+    <div class="row justify-content-start g-4 text-center">
+
+    <!-- Files -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#fileModal" class="text-white  d-block">
+          <i class="bi bi-folder display-4 d-block"></i>
+          <div>Files</div>
+        </a>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="fileModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center">
+            <div class="modal-header  text-white">
+              <h5 class="modal-title">File Manager Options</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body d-flex flex-column gap-2">
+              <a href="https://files.google.com" class="btn btn-primary">📱 Files Manager in Mobile</a>
+              <a href="file:///C:/" class="btn btn-secondary">💻 Files Manager in PC</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ICONS OF DESKTOP -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="https://www.youtube.com" target="_blank"
+          class="text-white text-center  d-block p-2 rounded-3">
+          <i class="bi bi-youtube display-4"></i>
+          <div>YouTube</div>
+        </a>
+      </div>
+<!-- CAMERA -->
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+         <a href="#" data-bs-toggle="modal" data-bs-target="#cameraModal" class="text-white d-block">
+      <i class="bi bi-camera display-4 d-block"></i>
+      <div>CAMERA</div>
+    </a>
+  </div>
+
+  <!-- CAMERA MODAL -->
+  <div class="modal fade" id="cameraModal" tabindex="-1" aria-labelledby="cameraModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="width: auto;height: 100px;">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cameraModalLabel">CAMERA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column gap-3">
+          <a href="https://webcamtests.com/"class="btn btn-primary">Camera for PC</a>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="photos.html" type="button" class="btn btn-light"><i class="bi bi-image"></i> GALLERY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="https://music.youtube.com" target="_blank"
+          class="text-white text-center  d-block p-2 rounded-3">
+          <i class="bi bi-music-note-beamed display-4"></i>
+          <div>YouTube Music</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="./photos.html" target="_blank"
+          class="text-white text-center  d-block p-2 rounded-3">
+          <i class="bi bi-image display-4"></i>
+          <div>Google Photos</div>
+        </a>
+      </div>
+      
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="https://excel.cloud.microsoft/new/?wdOrigin=new.apphome.excel"
+           class="text-white text-center  d-block p-2 rounded-3">
+          <i class="bi bi-file-earmark-excel display-4"></i>
+          <div>EXCEL</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="https://www.google.com"
+          class="text-white text-center  d-block p-2 rounded-3">
+          <i class="bi bi-globe2 display-4"></i>
+          <div>Web Browser</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="https://instagram.com" target="_blank"
+          class="text-white text-center d-block p-2 rounded-3">
+          <i class="bi bi-instagram display-4"></i>
+          <div>Instagram</div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Taskbar -->
+  <div class="d-flex justify-content-between align-items-center bg-dark bg-opacity-75 px-3 py-2 fixed-bottom">
+
+      <!-- Centered Start + Search -->
+    <div class="d-flex mx-autoX gap-2">
+      <!-- Start Menu -->
+      <div class="dropdown ">
+        <button class="btn p-2 border-0" type="button" data-bs-toggle="dropdown">
+          <img src="https://img.icons8.com/?size=100&id=i13OnzzdMZrV&format=png&color=FFFFFF" width="30" alt="POWER">
+        </button>
+        <ul class="dropdown-menu bg-dark bg-opacity-75 overflow-auto mt-0 mb-2 p-3" style="max-height: 300px;">
+          <li><a class="dropdown-item text-white" href="index.html">LOCKSCREEN</a></li>
+          <li><a class="dropdown-item text-white" href="https://anotepad.com/">SHUTDOWN</a></li>
+          <li><a class="dropdown-item text-white" href="https://www.google.com">SLEEP</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Centered Start + Search -->
+    <div class="d-flex mx-auto align-items-center gap-2">
+      <!-- Start Menu -->
+      <div class="dropdown">
+        <button class="btn p-2 border-0" type="button" data-bs-toggle="dropdown">
+          <img src="https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=ffffff" width="30" alt="Start">
+        </button>
+        <ul class="dropdown-menu overflow-auto mt-0 mb-2 p-3" style="max-height: 300px;">
+       <li class="dropdown-header text-dark bg-white" style="position: sticky; top: 0;">
+  Apps
+</li>
+          <li><a class="dropdown-item" href="https://www.google.com/search?q=calculator">🧮 Calculator</a></li>
+          <li><a class="dropdown-item" href="https://anotepad.com/">📝 Notepad</a></li>
+          <li><a class="dropdown-item" href="https://www.google.com">🌐 Web Browser</a></li>
+          <li><a class="dropdown-item" href="https://account.microsoft.com/account"><img src="https://img.icons8.com/?size=100&id=22989&format=png&color=000000"width="20px"/>  Microsoft Account Setting</a></li>
+          <li><a class="dropdown-item" href="https://excel.cloud.microsoft/new/?wdOrigin=new.apphome.excel"><img src="https://img.icons8.com/?size=100&id=13654&format=png&color=000000"width="20px"/>  Microsoft Excel</a></li>
+          <li><a class="dropdown-item" href="https://word.cloud.microsoft/en-us/"><img src="https://img.icons8.com/?size=100&id=13674&format=png&color=000000"width="20px"/>  Microsoft Word</a></li>
+          <li><a class="dropdown-item" href="https://powerpoint.cloud.microsoft/open/onedrive/?docId=A129DC30227591B6%21sa7d38eeac54942e3b3fe36255d0cdd47&driveId=A129DC30227591B6"><img src="https://img.icons8.com/?size=100&id=117557&format=png&color=000000"width="20px"/> Microsoft PowerPoint</a></li>
+          <li><a class="dropdown-item" href="https://www.microsoft.com/en-in/microsoft-365/onedrive/online-cloud-storage"><img src="https://img.icons8.com/?size=100&id=69490&format=png&color=000000"width="20px"/> Microsoft OneDrive</a></li>
+          <li><a class="dropdown-item" href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fnlp%3d0&sdf=0"><img src="https://img.icons8.com/?size=100&id=InYrvReIHoZb&format=png&color=000000"width="20px"/>  Microsoft Outlook</a></li>
+          <li><a class="dropdown-item" href="https://photos.google.com/?pli=1">🖼️ Gallery</a></li>
+          <li><a class="dropdown-item" href="https://webcamtests.com/">📷 CAMERA</a></li>
+        </ul>
+      </div>
+
+  
+
+  <!-- Center Section: Search + App Icons -->
+<div class="d-flex justify-content-center align-items-center flex-grow-1 gap-4">
+
+  <!-- Search -->
+  <div class="input-group" style="width:200px;">
+    <span class="input-group-text p-1"><i class="bi bi-search"></i></span>
+    <input type="search" class="form-control form-control-sm" placeholder="Search">
+  </div>
+
+  <!-- App Icons -->
+  <div class="d-flex align-items-center gap-3">
+       <a href="https://file-explorer.com" target="_blank" class="text-decoration-none">
+      <i class="bi bi-folder-fill text-warning fs-4"></i>
+    </a>
+     <a href="" target="_blank" class="text-decoration-none">
+      <i class="bi bi-image text-light fs-4"></i>
+    </a>
+    
+    <a href="https://www.youtube.com" target="_blank" class="text-decoration-none">
+      <i class="bi bi-youtube text-danger fs-4"></i>
+    </a>
+  
+    <a href="https://www.instagram.com" target="_blank" class="text-decoration-none">
+      <i class="bi bi-instagram text-light fs-4"></i>
+    </a>
+    <a href="https://music.youtube.com" target="_blank" class="text-decoration-none">
+      <i class="bi bi-music-note-beamed text-light fs-4"></i>
+    </a>
+   
+  </div>
+</div>
+
+<!-- Right Section: System Icons + Clock -->
+<div class="d-flex align-items-center gap-3 position-absolute end-0 me-4">
+  <div class="bg-white rounded-3 px-2 py-1 d-flex gap-2 align-items-center">
+    <img src="https://img.icons8.com/?size=100&id=E8xttyUu5dcp&format=png&color=000000" width="22">
+    <img src="https://img.icons8.com/?size=100&id=78188&format=png&color=000000" width="22">
+  </div>
+  <span id="clock" class="text-white fw-semibold small"></span>
+</div>
+</div>
+  <!-- JS -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="CLOCK.js"></script>
+</body>
+</html>
