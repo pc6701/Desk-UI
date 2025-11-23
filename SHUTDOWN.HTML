@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <title>Desk UI</title>
+  <link rel="icon" type="image/png" href="ICONS/icon2.png">
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style="margin:0; padding:0;">
+  <video id="shutdownVideo" autoplay muted playsinline
+      width="100%" 
+      height="100%"
+  >
+    <source src="ICONS/BOOT2.mp4" type="video/mp4">
+  </video>
+
+  <!-- Shutdown UI (hidden first) -->
+  <div id="msg" style=" display:none; 
+      text-align:center;background-color:black; width:100%;height:100vh;color:white;padding-top:20%;">
+    <h1>SHUTDOWN</h1>
+    <p class="text-small">Your PC has shut down completely. Do you want to start it?</p>
+
+    <a href="index.html" class="btn text-white">
+    <img src="ICONS/ICON3.png" width="25"> POWER ON
+</a>
+
+  </div>
+
+  <script>
+    // After video ends → hide video, show shutdown text
+    document.getElementById("shutdownVideo").onended = function () {
+      document.getElementById("shutdownVideo").style.display = "none";
+      document.getElementById("msg").style.display = "block";
+    };
+  </script>
+
+</body>
+</html>
